@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bookshelf App</title>
+     <link rel="stylesheet" href="assets/style/style.css">
+     <link rel="icon" href="assets/img/bookIcon.svg">
+</head>
+
+<body>
+     <header>
+          <div class="header-wrapper">
+               <h1 class="header-title">Bookshelf App</h1>
+               <p id="header-time">00/00/0000</p>
+          </div>
+     </header>
+
+     <main>
+          <section class="notif-section">
+          </section>
+
+          <section class="input-section">
+               <h2>Masukkan Buku Baru</h2>
+               <form id="input-book">
+                    <div class="input">
+                         <label for="book-title">Judul</label>
+                         <input id="book-title" type="text" autocomplete="off" autofocus required>
+                    </div>
+                    <div class="input">
+                         <label for="book-author">Penulis</label>
+                         <input id="book-author" type="text" autocomplete="off" required>
+                    </div>
+                    <div class="input">
+                         <label for="book-year">Tahun</label>
+                         <input id="book-year" type="number" autocomplete="off" required>
+                    </div>
+
+                    <div class="input-read-wrapper">
+                         <div class="input-read">
+                              <input id="book-has-read" type="checkbox">
+                              <label for="book-has-read">Selesai dibaca</label>
+                         </div>
+                         <button id="book-submit" type="submit">Tambahkan</button>
+                    </div>
+               </form>
+          </section>
+
+          <section class="search-section">
+               <h2>Cari Buku</h2>
+               <form id="search">
+                    <div class="search-group">
+                         <label for="search-book">Judul</label>
+                         <input id="search-book" type="text" autocomplete="off">
+                    </div>
+                    <button id="search-submit" type="submit">Cari</button>
+               </form>
+          </section>
+
+          <section class="bookshelf-section">
+               <div class="bookshelf-group">
+                    <h3>Belum selesai dibaca</h3>
+                    <div class="bookshelf-bookNone" id="unread" style="display: block;">
+                         <img src="assets/img/woman-reading-book-under-the-tree.gif" alt="">
+                         <p>Belum ada buku nih</p>
+                         <p>yuk masukkan buku baru</p>
+                    </div>
+                    <div class="bookshelf-list" id="unreadBook-wrapper">
+                    </div>
+               </div>
+
+               <div class="bookshelf-group">
+                    <h3>Selesai dibaca</h3>
+                    <div class="bookshelf-bookNone" id="read" style="display: block;">
+                         <img src="assets/img/woman-reading-book-under-the-tree.gif" alt="">
+                         <p>Belum ada buku nih</p>
+                         <p>yuk masukkan buku baru</p>
+                    </div>
+                    <div class="bookshelf-list" id="readBook-wrapper">
+                    </div>
+               </div>
+          </section>
+     </main>
+
+     <footer>
+          <p>Created by <a href="https://www.instagram.com/azsa_nrd/" target="_blank">Azsa Nurwahyudi</a> -
+               2022 | Submission <a href="https://www.dicoding.com/" target="_blank">Dicoding</a></p>
+     </footer>
+
+     <script src="assets/script/script.js"></script>
+</body>
+
+</html>
